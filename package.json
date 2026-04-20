@@ -1,0 +1,21 @@
+{
+  "name": "tejram",
+  "version": "1.0.0",
+  "description": "A modern, responsive, full-stack corporate help desk ticketing system built with the MERN stack and TypeScript (MongoDB, Express, React, Node.js).",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm start --prefix backend",
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "dev": "concurrently \"npm run dev --prefix frontend\" \"npm run dev --prefix backend\"",
+    "install-all": "npm install --prefix frontend && npm install --prefix backend",
+    "seed": "npm run seed --prefix backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "concurrently": "^9.2.1",
+    "express": "^5.2.1"
+  }
+}
